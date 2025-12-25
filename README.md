@@ -1,16 +1,21 @@
-# React + Vite
+# Library Explorer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive, infinite-scrolling book explorer powered by the **Open Library public API**.  
+Built using **React.js, Tailwind CSS, and Vite**, this project emphasizes **large, image-first cards, smooth loading, virtualized performance**, and a user-friendly interface.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Infinite scrolling**: Load more books as you scroll down
+- **Virtualized grid**: Smooth performance with 1000+ books
+- **Image-dominant cards**: Book cover, title, author(s), year, subjects
+- **Search bar**: Debounced search (400ms) for dynamic results
+- **Quick filter chips**: `science`, `mathematics`, `history`, `biology`, `astronomy`
+- **Back-to-Top button**: Scroll to top easily
+- **Query persisted in URL** (`?q=science`) and restored on reload
+- **Responsive design**: 
+  - Desktop: 4–5 columns  
+  - Tablet: 2–3 columns  
+  - Mobile: 1–2 columns
+- **Skeleton placeholders** while loading

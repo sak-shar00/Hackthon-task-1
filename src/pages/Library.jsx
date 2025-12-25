@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import SearchBar from "../components/SearchBar";
 import BookGrid from "../components/BookGrid";
 import useDebounce from "../hooks/useDebounce";
+import Filters from "../components/Filters";
 
 export default function Library() {
   const [query, setQuery] = useState("science");
@@ -30,8 +31,10 @@ export default function Library() {
         </div>
 
         <SearchBar value={query} onChange={setQuery} />
+        <Filters onSelect={setQuery} />
 
         <BookGrid query={debouncedQuery} />
+
       </div>
     </div>
   );
